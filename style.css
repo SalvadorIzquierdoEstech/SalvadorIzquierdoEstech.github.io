@@ -267,6 +267,7 @@ html {
 .lenguajes,
 .herramientas {
     display: flex;
+    flex-wrap: wrap     ;
     justify-content: center;
     align-items: center;
 }
@@ -275,7 +276,7 @@ html {
 .herramienta,
 .iconoLenguaje {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -316,6 +317,11 @@ html {
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    display: block;
+    box-sizing: border-box;
+    
+    padding: 0 3vw;
 }
 
 .datos {
@@ -336,8 +342,10 @@ html {
 .datosSobreMi {
     border: solid 1px rgb(200, 25, 25);
 
-    
     display: block;
+    box-sizing: border-box;
+    
+    padding: 0 3vw;
 
 }
 
