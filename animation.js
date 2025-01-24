@@ -23,41 +23,41 @@ document.addEventListener('DOMContentLoaded', function () {
     const enlaces = document.querySelectorAll('.indiceDatos a');
     const bloques = document.querySelectorAll('.datos > div');
 
-    
+
     bloques[0].style.display = 'block';  // Muestra el primer bloque por defecto
     bloques[0].style.display = 'flex';   // Aplica flexbox al primer bloque
     bloques[0].style.flexDirection = 'column'; // Dirección de la columna
     enlaces[0].classList.add('activo');
 
     enlaces.forEach((enlace) => {
-      enlace.addEventListener('click', function (e) {
-        e.preventDefault(); // Evita el comportamiento por defecto del enlace
+        enlace.addEventListener('click', function (e) {
+            e.preventDefault(); // Evita el comportamiento por defecto del enlace
 
-        // Ocultar todos los bloques
-        bloques.forEach((bloque) => {
-          bloque.style.display = 'none';
+            // Ocultar todos los bloques
+            bloques.forEach((bloque) => {
+                bloque.style.display = 'none';
+            });
+
+            // Eliminar la clase 'activo' de todos los enlaces
+            enlaces.forEach((enlace) => {
+                enlace.classList.remove('activo');
+            });
+
+            // Agregar la clase 'activo' al enlace clicado
+            enlace.classList.add('activo');
+
+            // Obtener el atributo data-target del enlace y mostrar el bloque correspondiente
+            const bloqueActivo = document.querySelector(`.${enlace.dataset.target}`);
+
+            // Muestra el bloque correspondiente
+            if (bloqueActivo) {
+                bloqueActivo.style.display = 'flex';
+                bloqueActivo.style.flexDirection = 'column'; // Aplica flex-direction column
+                bloqueActivo.style.justifyContent = 'center'; // Centra verticalmente
+                bloqueActivo.style.alignItems = 'center'; // Centra horizontalmente
+
+            }
         });
-
-        // Eliminar la clase 'activo' de todos los enlaces
-        enlaces.forEach((enlace) => {
-          enlace.classList.remove('activo');
-        });
-
-        // Agregar la clase 'activo' al enlace clicado
-        enlace.classList.add('activo');
-        
-        // Obtener el atributo data-target del enlace y mostrar el bloque correspondiente
-        const bloqueActivo = document.querySelector(`.${enlace.dataset.target}`);
-        
-        // Muestra el bloque correspondiente
-        if (bloqueActivo) {
-            bloqueActivo.style.display = 'flex';
-            bloqueActivo.style.flexDirection = 'column'; // Aplica flex-direction column
-            bloqueActivo.style.justifyContent = 'center'; // Centra verticalmente
-            bloqueActivo.style.alignItems = 'center'; // Centra horizontalmente
-          
-        }
-      });
     });
 });
 

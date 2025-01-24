@@ -12,7 +12,7 @@
 <body>
     <header class="container">
         <a href="archivo.pdf" download id="downloadPDF" class="button">Curriculum</a>
-        <button id="goToFooter" class="button">Contacto</button>
+        <a href="#" class="button">Contacto</a>
 
     </header>
     <div class="container titulo">
@@ -234,7 +234,7 @@
         <div class="indiceDatos">
             <a href="" data-target="datosSobreMi">Sobre Mí</a>
             <div class="separador"></div>
-            <a href="" data-target="datosLenguajes" >Lenguajes</a>
+            <a href="" data-target="datosLenguajes">Lenguajes</a>
             <div class="separador"></div>
             <a href="" data-target="datosHerramientas">Herramientas</a>
         </div>
@@ -249,50 +249,60 @@
             <div class="datosLenguajes">
                 <h3>Lenguajes que he aprendido o estoy aprendiendo</h3>
                 <div class="lenguajes">
-                    <div class="iconoLenguaje">
-                        <img src="images/icons/HTML.png" alt="">
-                        <p>HTML 5</p>
+                    <div class="columna">
+                        <div class="iconoLenguaje">
+                            <img src="images/icons/HTML.png" alt="">
+                            <p>HTML 5</p>
+                        </div>
+                        <div class="iconoLenguaje">
+                            <img src="images/icons/CSS.png" alt="">
+                            <p>CSS 3</p>
+                        </div>
                     </div>
-                    <div class="iconoLenguaje">
-                        <img src="images/icons/CSS.png" alt="">
-                        <p>CSS 3</p>
+                    <div class="columna">
+                        <div class="iconoLenguaje">
+                            <img src="images/icons/Kotlin.png" alt="">
+                            <p>Kotlin</p>
+                        </div>
+                        <div class="iconoLenguaje">
+                            <img src="images/icons/Swift.png" alt="">
+                            <p>SWIFT</p>
+                        </div>
                     </div>
-                    <div class="iconoLenguaje">
-                        <img src="images/icons/Kotlin.png" alt="">
-                        <p>Kotlin</p>
-                    </div>
-                    <div class="iconoLenguaje">
-                        <img src="images/icons/Swift.png" alt="">
-                        <p>SWIFT</p>
-                    </div>
-                    <div class="iconoLenguaje">
-                        <img src="images/icons/php.png" alt="">
-                        <p>PHP</p>
-                    </div>
-                    <div class="iconoLenguaje">
-                        <img src="images/icons/sql.png" alt="">
-                        <p>MySQL</p>
+                    <div class="columna">
+                        <div class="iconoLenguaje">
+                            <img src="images/icons/php.png" alt="">
+                            <p>PHP</p>
+                        </div>
+                        <div class="iconoLenguaje">
+                            <img src="images/icons/sql.png" alt="">
+                            <p>MySQL</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="datosHerramientas">
                 <h3>Herramientas que utilizo</h3>
                 <div class="herramientas">
-                    <div class="herramienta">
-                        <img src="images/icons/AndroidStudio.png" alt="">
-                        <p>Android Studio</p>
+                    <div class="columna">
+                        <div class="herramienta">
+                            <img src="images/icons/AndroidStudio.png" alt="">
+                            <p>Android Studio</p>
+                        </div>
+                        <div class="herramienta">
+                            <img src="images/icons/XCode.png" alt="">
+                            <p>XCode</p>
+                        </div>
                     </div>
-                    <div class="herramienta">
-                        <img src="images/icons/XCode.png" alt="">
-                        <p>XCode</p>
-                    </div>
-                    <div class="herramienta">
-                        <img src="images/icons/visualStudio.png" alt="">
-                        <p>VisualStudioCode</p>
-                    </div>
-                    <div class="herramienta">
-                        <img src="images/icons/FigmA.png" alt="">
-                        <p>Figma</p>
+                    <div class="columna">
+                        <div class="herramienta">
+                            <img src="images/icons/visualStudio.png" alt="">
+                            <p>VisualStudioCode</p>
+                        </div>
+                        <div class="herramienta">
+                            <img src="images/icons/FigmA.png" alt="">
+                            <p>Figma</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -302,24 +312,34 @@
     <div class="container proyectos">
         <div class="slider">
             <div class="proyecto p1">
-                <h3>Proyecto App Foro Cinéfilo</h3>
-                <p>Pryecto grupal en el que se trabajó una app Móvil (Android)
-                     conectada a una API, en la que los usuarios podían comentar
-                      y evaluar sus películas y series favoritas</p>
-                <a href="">Detalles</a>
+                <div class="overlay">
+                    <h3>Proyecto App Foro de Cine</h3>
+                    <p>Proyecto grupal en el que se trabajó una app Móvil (Android)
+                        conectada a una API, en la que los usuarios podían comentar
+                        y evaluar sus películas y series favoritas</p>
+                    <a href="https://github.com/MariaSanchezFernandez/proyectoProgramacion">Detalles</a>
+                </div>
             </div>
             <div class="proyecto p2">
-                <h3>Proyecto Landing Página Web </h3>
-                <p>Proyecto Individual para el diseño de una Landing, en este caso la landing de la web de una tienda de Muebles</p>
-                <a href="">Detalles</a>
+                <div class="overlay">
+                    <h3>Proyecto Landing Página Web </h3>
+                    <p>Proyecto individual para el diseño de una Landing, en este caso la landing de la web de una
+                        tienda de
+                        Muebles</p>
+                    <a href="https://www.figma.com/design/M5a6qVcQIBciioM3egqKdG/Proyecto-Landing(entregado)?node-id=0-1&t=C4vFZqJCmufgqnNq-1">Detalles</a>
+                </div>
             </div>
+
             <div class="proyecto p3">
-                <h3>Proyecto Web Social</h3>
-                <p>Proyecto en grupo en el que se estableció una web conectada a una
-                     base de datos en la que los usuarios pueden agregar amistades,
-                      enviar post y comentar, entre otras funciones </p>
-                <a href="">Detalles</a>
+                <div class="overlay">
+                    <h3>Proyecto Web Social</h3>
+                    <p>Proyecto en grupo en el que se estableció una web conectada a una
+                        base de datos en la que los usuarios pueden agregar amistades,
+                        enviar post y comentar, entre otras funciones </p>
+                    <a href="https://github.com/JoseLopezVilchez/TrabajoFinalMarcasYBBDD">Detalles</a>
+                </div>
             </div>
+
             <button id="next"></button>
             <button id="prev"></button>
 
@@ -330,11 +350,13 @@
     <footer>
         <div class="separador"></div>
         <div class="container contacto">
-            <a href="#"><img src="images/icons/Mail.png" alt="">Gmail</a>
-            <a href="#"><img src="images/icons/GitHub.png" alt="">GitHub</a>
-            <a href="#"><img src="images/icons/Linkedin.png" alt=""> Linkedln</a>
+            <a href="mailto:salvadorizquierdoortega@gmail.com?subject=Hola Salvador%20Salvador&body=Le escribo para...">
+                <img src="images/icons/MailB.png" alt="Ícono de Gmail">Gmail
+            </a>
+            <a href="https://github.com/SalvadorIzquierdoEstech" target="_blank"><img src="images/icons/GitHubB.png" alt="Enlcae a Github">GitHub</a>
+            <a href="https://www.linkedin.com/in/salvador-izquierdo-ortega-920440346/" target="_blank"><img src="images/icons/LinkedinB.png" alt="Enlace a LinkedIn"> LinkedIn</a>
         </div>
-        <img src="images/fondoAzul2.svg" alt="">
+        <img src="images/fondoAzul2.svg" alt="imgFooterDecorativa">
 
     </footer>
 
