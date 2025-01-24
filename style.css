@@ -555,7 +555,8 @@ footer {
 
     margin: 2vw 0;
 
-    border: solid 1px red;
+    /* bordes para hacer el spacing */
+    /* border: solid 1px red; */
 
 
 }
