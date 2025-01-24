@@ -236,30 +236,19 @@ html {
     text-rendering: optimizeLegibility
 }
 
-*,
-:after,
-:before {
-    box-sizing: inherit
-}
+
 
 body {
     line-height: 1.8;
     font-weight: 400;
     color:white;
     background-color: rgb(135, 206, 235);
-    position: relative;
-    font-size: 18px
 }
 
-@media screen and (min-width:1400px) {
-    body {
-        font-size: calc(18px + 5.4 * ((100vw - 1400px) / 280))
-    }
-}
 
 @media screen and (min-width:1680px) {
     body {
-        font-size: 23.4px
+        font-size: 23px
     }
 }
 
@@ -296,7 +285,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 29px;
+    font-size: 22px;
     font-weight: 700;
     margin: 40px 0 20px;
     word-wrap: break-word;
@@ -326,13 +315,6 @@ h1 {
     font-size: 29px
 }
 
-@media screen and (min-width:320px) {
-
-    .h1,
-    h1 {
-        font-size: calc(29px + 55 * ((100vw - 320px) / 1360))
-    }
-}
 
 @media screen and (min-width:1680px) {
 
@@ -347,13 +329,7 @@ h2 {
     font-size: 29px
 }
 
-@media screen and (min-width:320px) {
 
-    .h2,
-    h2 {
-        font-size: calc(29px + 17 * ((100vw - 320px) / 1360))
-    }
-}
 
 @media screen and (min-width:1680px) {
 
@@ -363,39 +339,17 @@ h2 {
     }
 }
 
-.h3,
-h3 {
-    font-size: 18px
-}
 
-@media screen and (min-width:320px) {
 
-    .h3,
-    h3 {
-        font-size: calc(18px + 11 * ((100vw - 320px) / 1360))
-    }
-}
 
-@media screen and (min-width:1680px) {
 
-    .h3,
-    h3 {
-        font-size: 29px
-    }
-}
 
 .h4,
 h4 {
     font-size: 18px
 }
 
-@media screen and (min-width:1400px) {
 
-    .h4,
-    h4 {
-        font-size: calc(18px + 11 * ((100vw - 1400px) / 280))
-    }
-}
 
 @media screen and (min-width:1680px) {
 
@@ -425,11 +379,6 @@ blockquote p {
     font-size: 29px
 }
 
-@media screen and (min-width:320px) {
-    blockquote p {
-        font-size: calc(29px + 45 * ((100vw - 320px) / 1360))
-    }
-}
 
 @media screen and (min-width:1680px) {
     blockquote p {
@@ -2525,11 +2474,7 @@ a.pswp__share--download:hover {
     }
 }
 
-@media screen and (min-width:1024px) and (min-width:320px) {
-    .block--copy .aside blockquote p {
-        font-size: calc(18px + 11 * ((100vw - 320px) / 1360))
-    }
-}
+
 
 @media screen and (min-width:1024px) and (min-width:1680px) {
     .block--copy .aside blockquote p {
@@ -3383,11 +3328,7 @@ a.pswp__share--download:hover {
     font-size: 29px
 }
 
-@media screen and (min-width:320px) {
-    .work .block--title h1 {
-        font-size: calc(29px + 89 * ((100vw - 320px) / 1360))
-    }
-}
+
 
 @media screen and (min-width:1680px) {
     .work .block--title h1 {
@@ -4049,11 +3990,6 @@ a.pswp__share--download:hover {
     font-size: 118px
 }
 
-@media screen and (min-width:1024px) {
-    .decoBigText {
-        font-size: calc(118px + 71 * ((100vw - 1024px) / 656))
-    }
-}
 
 @media screen and (min-width:1680px) {
     .decoBigText {
@@ -4506,12 +4442,6 @@ input[type=radio]:checked+span:before {
     }
 }
 
-@media screen and (min-width:320px) {
-    .c-buzzwords .c-buzzwords__charWrapper .c-buzzwords__char {
-        font-size: calc(40px + 155 * (100vw - 320px) / 1080)
-    }
-}
-
 @media screen and (min-width:1400px) {
     .c-buzzwords .c-buzzwords__charWrapper .c-buzzwords__char {
         font-size: 195px
@@ -4524,11 +4454,7 @@ input[type=radio]:checked+span:before {
     }
 }
 
-@media screen and (min-width:667px) and (min-width:320px) {
-    .c-buzzwords .c-buzzwords__charWrapper .c-buzzwords__char {
-        font-size: calc(40px + 130 * (100vw - 320px) / 1080)
-    }
-}
+
 
 @media screen and (min-width:667px) and (min-width:1400px) {
     .c-buzzwords .c-buzzwords__charWrapper .c-buzzwords__char {
@@ -4542,11 +4468,7 @@ input[type=radio]:checked+span:before {
     }
 }
 
-@media screen and (min-width:1600px) and (min-width:320px) {
-    .c-buzzwords .c-buzzwords__charWrapper .c-buzzwords__char {
-        font-size: calc(40px + 155 * (100vw - 320px) / 1080)
-    }
-}
+
 
 @media screen and (min-width:1600px) and (min-width:1400px) {
     .c-buzzwords .c-buzzwords__charWrapper .c-buzzwords__char {
@@ -4708,11 +4630,7 @@ input[type=radio]:checked+span:before {
     }
 }
 
-@media screen and (min-width:320px) {
-    .c-homeIntro__about:before {
-        font-size: calc(400px + 400 * (100vw - 320px) / 1600)
-    }
-}
+
 
 @media screen and (min-width:1920px) {
     .c-homeIntro__about:before {
@@ -6038,11 +5956,6 @@ input[type=radio]:checked+span:before {
     font-size: 18px
 }
 
-@media screen and (min-width:320px) {
-    .section__copy--aboutIntro {
-        font-size: calc(18px + 11 * ((100vw - 320px) / 1360))
-    }
-}
 
 @media screen and (min-width:1680px) {
     .section__copy--aboutIntro {
