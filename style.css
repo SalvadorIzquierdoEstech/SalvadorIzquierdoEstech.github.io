@@ -1,3 +1,4 @@
+/* COMPONENTES GENERALES */
 body {
     display: flex;
     flex-direction: column;
@@ -46,12 +47,11 @@ a {
 a:hover {
     font-weight: 800;
     text-shadow: 0 0 8px #ffffff;
-    /* Resplandor dorado */
 }
 
 
 
-
+/* animación statica Background */
 @keyframes moveStatic {
     0% {
         transform: translate(0, 0);
@@ -82,23 +82,36 @@ header {
 }
 
 .button {
-    background-color: #FFDFBA;
+    background: linear-gradient(to bottom right, #FFDFBA, #FFA07A);
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
 
     margin: 0 2vw;
     padding: 10px 14px;
     font-size: 12px;
+
+    transition: background 1s ease-in-out, text-shadow 0.3s ease, box-shadow 0.3s ease-in-out; 
+}
+
+.button:hover{
+
+    background: linear-gradient(to bottom right, #FFA07A, #FFDFBA);
+    font-weight: 800;
+    text-shadow: 0 0 8px #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   
 }
 
 
 
-/* TITULO GIGANTE */
+
+/* TITULO INTERACTIVO */
 
 .c-buzzwords .c-buzzwords__charWrapper .c-buzzwords__char {
-    text-shadow: -20px 10px 10px rgba(0, 0, 0, .3), 0 20px 50px rgba(0, 0, 0, .3);
+    text-shadow: -20px 10px 10px rgba(0, 0, 0, .1), 0 20px 50px rgba(0, 0, 0, .1);
     font-weight: 900;
     letter-spacing: -2px;
 
@@ -112,6 +125,9 @@ header {
 }
 
 .c-buzzwords .c-buzzwords__charWrapper .char-subTitle {
+    font-size: 2em;
+}
+.c-buzzwords .c-buzzwords__charWrapper .char-proyectTitle{
     font-size: 2em;
 }
 
@@ -130,11 +146,6 @@ header {
     transform: translateX(-100px);
     will-change: opacity, transform;
 }
-
-
-
-
-
 
 .c-buzzwords .c-buzzwords__line.is-ready .c-buzzwords__charWrapper {
     opacity: 1;
@@ -157,21 +168,16 @@ header {
 .subtitle {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
     flex-direction: row;
-    /* Asegúrate de que sea horizontal */
     gap: 20px;
-    /* Ajusta el espacio entre los hijos */
+    
 }
 
 .nombre {
     display: flex;
     flex-wrap: wrap;
-    /* Permite que los elementos internos se envuelvan si es necesario */
-    gap: 10px;
-    /* Espaciado entre caracteres internos */
+    gap: 10px; 
 }
 
 body,
@@ -449,7 +455,6 @@ html {
     border-radius: 20px;
     padding: 20px;
     transition: 0.5s;
-    left: calc(50% - 20vw);
     /* Centramos con respecto a la nueva anchura */
     transform: translateY(-50%);
     /* Ajustamos la posición en Y para centrar */
@@ -550,6 +555,8 @@ footer {
 
     margin: 2vw 0;
 
+    border: solid 1px red;
+
 
 }
 
@@ -591,7 +598,8 @@ footer {
     }
 
     .proyecto {
-        height: 45vh;
+    
+        height: 28vh;
         font-size: 14px;
     }
 }
@@ -616,10 +624,9 @@ footer {
 
     .button {
         margin: 0 2vw;
-        padding: 7px 16px;
-        font-size: 12px;
+        padding: 10px 20px;
+        font-size: 14px;
     }
-
 
     .indiceDatos {
         width: 30%;
@@ -631,7 +638,7 @@ footer {
     }
 
     .proyecto {
-        height: 50vh;
+        height: 35vh;
     }
 }
 
@@ -672,11 +679,11 @@ footer {
     }
 
     .proyecto {
-        height: 55vh;
+        height: 50vh;
     }
 
     .overlay {
-        padding: 0 8vw;
+        padding: 0 6vw;
     }
 
 }
@@ -708,6 +715,12 @@ footer {
         height: 500px;
     }
 
+    .button {
+        margin: 0 2vw;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
 }
 
 /* 2xl */
@@ -729,6 +742,6 @@ footer {
     }
 
     .slider {
-        height: 100vh;
+        height: 65vh;
     }
 }

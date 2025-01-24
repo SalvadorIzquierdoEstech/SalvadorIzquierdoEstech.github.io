@@ -16,6 +16,24 @@ document.addEventListener("scroll", () => {
     document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 });
 
+//JS PARA EL BOTON DE CONTACTO ( SCROLL AL FONDO )
+
+// Obtén el enlace y la sección de destino
+const scrollLink = document.getElementById('scrollLink');
+const fondoSection = document.getElementById('fondo');
+
+// Añade el evento de clic al enlace
+scrollLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Evita que el enlace haga el comportamiento predeterminado (recargar la página)
+    
+    // Usa el método scrollIntoView para hacer el scroll hacia la sección con un efecto suave
+    fondoSection.scrollIntoView({
+        behavior: 'smooth',  // Define que el scroll será suave
+        block: 'start'       // Asegura que el scroll se alinee con el inicio de la sección
+    });
+});
+
+
 // JS PARA EL APARTADO DE "SOBRE MI"
 
 //hace que al clicar los diferentes enlaces muestre uno u otro contenido
@@ -84,6 +102,7 @@ function loadShow() {
         items[i].style.zIndex = -stt;
         items[i].style.filter = 'blur(5px)';
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
+        item[i].style.width = `${200}px`;
     }
 
     stt = 0;
@@ -96,6 +115,7 @@ function loadShow() {
         items[i].style.zIndex = -stt;
         items[i].style.filter = 'blur(5px)';
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
+        item[i].style.width = `${200}px`;
     }
 }
 
