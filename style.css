@@ -319,8 +319,6 @@ html {
 
     width: 35%;
     height: 25vh;
-
-    border: solid 1px rgb(25, 25, 25);
 }
 
 .indiceDatos a.activo {
@@ -549,8 +547,9 @@ footer {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 
+
     margin: 2vw 0;
-    border: solid 1px rgb(101, 13, 151);
+
 
 }
 
