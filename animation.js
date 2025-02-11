@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 bloqueActivo.style.flexDirection = 'column'; // Aplica flex-direction column
                 bloqueActivo.style.justifyContent = 'center'; // Centra verticalmente
                 bloqueActivo.style.alignItems = 'center'; // Centra horizontalmente
+                
 
             }
         });
@@ -98,9 +99,9 @@ function loadShow() {
     for (let i = active + 1; i < items.length; i++) {
         stt++;
         // Ajuste de transformaciones con el nuevo tamaño
-        items[i].style.transform = `translateX(${20 * stt - stt}vw) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
+        items[i].style.transform = `translateX(${20 * stt}vw) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
         items[i].style.zIndex = -stt;
-        items[i].style.filter = 'blur(5px)';
+        items[i].style.filter = `blur(5px)`;
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
         
     }
@@ -113,7 +114,7 @@ function loadShow() {
         // Ajuste de transformaciones con el nuevo tamaño
         items[i].style.transform = `translateX(${-20 * stt}vw) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
         items[i].style.zIndex = -stt;
-        items[i].style.filter = 'blur(5px)';
+        items[i].style.filter = `blur(5px)`;
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
         
     }
@@ -134,18 +135,5 @@ prev.onclick = function () {
     loadShow();
 }
 
-// Inicializa el carrusel
-loadShow();
 
-// Función para cambiar al siguiente proyecto
-next.onclick = function () {
-    active = (active + 1 < items.length) ? active + 1 : active;
-    loadShow();
-}
-
-// Función para cambiar al proyecto anterior
-prev.onclick = function () {
-    active = (active - 1 >= 0) ? active - 1 : active;
-    loadShow();
-}
 

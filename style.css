@@ -365,7 +365,7 @@ html {
     position: relative;
     /* width: 45vw; */
     width: 65%;
-    height: 45vh;
+    height: 40vh;
 
 
 
@@ -560,6 +560,12 @@ footer {
 
 
 }
+
+/* xss */
+@media (min-width:320px) {
+    
+}
+
 
 
 /* xs */
