@@ -82,28 +82,18 @@ header {
 }
 
 .button {
-    background: linear-gradient(to bottom right, #FFDFBA, #FFA07A);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-
-    margin: 0 2vw;
-    padding: 10px 14px;
-    font-size: 12px;
-
-    transition: background 1s ease-in-out, text-shadow 0.3s ease, box-shadow 0.3s ease-in-out; 
+  background: linear-gradient(45deg, #FFA07A, #FF6347);
+  color: white;
+  border-radius: 12px;
+  padding: 12px 22px;
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+.button:hover {
+  background: linear-gradient(45deg, #FF6347, #FFA07A);
+  transform: translateY(-2px);
 }
 
-.button:hover{
 
-    background: linear-gradient(to bottom right, #FFA07A, #FFDFBA);
-    font-weight: 800;
-    text-shadow: 0 0 8px #ffffff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-   
-}
 
 
 
@@ -553,12 +543,10 @@ footer {
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-
-
     margin: 2vw 0;
 
     /* bordes para hacer el spacing */
-    border: solid 1px red;
+    /* border: solid 1px red; */
 
 
 }
@@ -583,13 +571,13 @@ footer {
     .indiceDatos{
         flex-direction: column;
         justify-content: space-evenly;
-        width: 35%;
+        width: 25vw;
     }
     .indiceDatos .separador{
         display:block;
     }
     .datos{
-        width: 65%;
+        width: 75vw;
     }
     .contacto{
         flex-direction: row;
